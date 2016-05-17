@@ -9,8 +9,13 @@ def sigma(end):
   #Sum identity
   return (end * (end + 1) / 2)
 
+#Sum of multiples of 3 below 1000
 sum3 = 3 * sigma(333)
+#Sum of multiples of 5 below 1000
 sum5 = 5 * sigma(199)
+#Now we've double counted the multiples of 15
+#So sum those as well
 sum15 = 15 * sigma(66)
 
+#Sum of 3's + sum of 5's - double counts of 15
 print sum3 + sum5 - sum15
